@@ -5,10 +5,17 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: directory
+  path: ''
+  label: Dir
+  create: all
+  match: "**/*"
+- type: directory
   path: blogposts
   label: blogposts
   create: documents
   match: "**/*"
+- type: heading
+  label: Sidebar
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
